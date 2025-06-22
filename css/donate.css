@@ -40,9 +40,9 @@ nav {
 }
   
 .left-ads {
-    width: 120px;
+    width: 270px;
     background-color: #888;
-    height: 400px;
+    height: 800px;
     margin-right: 20px;
 }
   
@@ -71,14 +71,32 @@ nav {
 }
 
 .right-ads {
-    width: 120px;
+    width: 270px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
     margin-left: 20px;
 }
 
 .right-ads div {
     background-color: #777;
-    height: 180px;
+    height: 400px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#search{
+    width: 165px;
+    padding: 5px;
+    border-radius: 1231231241px;
+    border: none;
 }
