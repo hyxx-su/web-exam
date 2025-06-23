@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>모금하기 페이지</title>
-    <link rel="stylesheet" href="../css/donate.css">
+    <link rel="stylesheet" href="../css/info.css">
 </head>
 <body>
 
 <header>
     <div class="header-left"><img src="../images/logo.png" alt="logo"></div>
+    <div class="header-cneter"><input id="search" type="text" placeholder="🔎 검색하기"></div>
     <div class="header-right">
         <a href="#"><b>홈</b></a>
         <a href="#"><b>로그인</b></a>
         <a href="#"><b>회원가입</b></a>
-        <input id="search" type="text" placeholder="검색하기">
     </div>
 </header>
 
@@ -28,25 +28,42 @@
 <div class="container">
 
     <div class="main-form">
-        <h1>이런 <b><a href="#">장애인 복지 센터</a></b>에 관한<br>
-        검색 결과가 없습니다!😭</h1>
+        <h1><b><a href="#">대구 명곡역 복지 센터</a></b>에 관한 정보 입니다!</h1>
+        <div class="box">
+            <div class="mk-img"><img src="../images/명곡역.png" alt=""></div>
+            <div class="explain">
+                <p>위치</p>
+            </div>
+        </div> 
     </div>
 
     <div class="right-ads">
         <div class="find-center">
-            <div class="find-center-title">
-                <input type="text" placeholder="🔎 센터 입력">
+            <div class="high">
+                <div class="find-center-title">
+                    <input id="centerInput" type="text" placeholder="🔎 센터 입력">
+                </div>
+                <div class="btn">
+                    <button onclick="">검색</button>
+                </div>
             </div>
-            <button>제출하기</button>
+            <div class="centers">
+                <ul>
+                    <div class="li"><li><a href="#"><b>서울 복지 센터들</b></a></li></div>
+                    <div class="li"><li><a href="#"><b>대구 복지 센터들</b></a></li></div>
+                    <div class="li"><li><a href="#"><b>부산 복지 센터들</b></a></li></div>
+                    <div class="li"><li><a href="#"><b>광주 복지 센터들</b></a></li></div>
+                    <div class="li"><li><a href="#"><b>대전 복지 센터들</b></a></li></div>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
 
-<script src="../js/donate.js"></script>
-</body>
 <footer>
-    <div class="footer">
-        p
+    <div class="info">
+        d
     </div>
 </footer>
+</body>
 </html>
