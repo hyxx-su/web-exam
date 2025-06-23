@@ -30,10 +30,19 @@ header a:hover{
     gap: 15px;
 }
 
-.header-right input[type="text"] {
+#search{
+    width: 400px;
+    height: 30px;
     padding: 5px;
+    border-radius: 1231231241px;
+    border: 2px solid #bebebe;
 }
-  
+
+#search:focus {
+    outline: none;
+    border-color: rgb(0, 127, 254);
+}
+
 nav {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
@@ -139,13 +148,6 @@ nav{
 a{
     color: white;
     text-decoration: none;
-}
-
-#search{
-    width: 165px;
-    padding: 5px;
-    border-radius: 1231231241px;
-    border: 2px solid #bebebe;
 }
 
 footer .info{
