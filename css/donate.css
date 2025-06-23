@@ -26,13 +26,23 @@ header {
 }
   
 nav {
-    background-color: #666;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     padding: 10px 30px;
     display: flex;
     gap: 20px;
+    box-shadow: #000000 4px 4px 8px;
 }
-  
+
+nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: rgb(0, 127, 254);
+    text-decoration: none;
+}
 .container {
     display: flex;
     padding: 30px;
@@ -41,15 +51,18 @@ nav {
   
 .main-form {
     flex: 1;
-    background-color: #ff8a8a;
+    background-color: #ffffff;
     padding: 20px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
+    border-radius: 4px;
 }
 
 .main-form button {
     padding: 10px;
-    background-color: #333;
+    background-color: #000000;
     color: white;
     border: none;
     cursor: pointer;
@@ -74,9 +87,23 @@ nav {
     border-radius: 34234324px;
 }
 
-.right-ads .find-center {
-    background-color: #777;
+.main-form h1{
+    text-align: center;
+}
+
+.main-form a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.main-form a:hover{
+    color: rgb(0, 127, 254);
+    text-decoration: none;
+}
+
+.find-center {
+    background-color: #ffffff;
     height: 650px;
+    border-radius: 4px;
 }
 
 .find-center input[type="text"] {
@@ -84,12 +111,15 @@ nav {
     padding: 10px;
     border-radius: 345243px;
     border: none;
+    border: #bebebe 2px solid;
 }
 
 .find-center-title {
     display: flex;
     justify-content: center;
     margin-top: 18px;
+    border-radius: 1231231241px;
+    color: #bebebe;
 }
 
 nav{
@@ -107,4 +137,9 @@ a{
     padding: 5px;
     border-radius: 1231231241px;
     border: none;
+}
+
+footer .info{
+    width: 100%;
+    height: auto;
 }
