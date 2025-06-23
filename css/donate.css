@@ -4,11 +4,20 @@ body {
 }
 
 header {
-    background-color: #aaa;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
+}
+
+header a{
+    color: #bebebe;
+}
+
+header a:hover{
+    color: rgb(0, 127, 254);
+    text-decoration: none;
 }
 
 .header-left {
@@ -136,7 +145,7 @@ a{
     width: 165px;
     padding: 5px;
     border-radius: 1231231241px;
-    border: none;
+    border: 1px solid #bebebe;
 }
 
 footer .info{
