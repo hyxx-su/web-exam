@@ -193,3 +193,89 @@ nav ul li {
     padding: 0px 10px;
     margin: 0px 40px;
 }
+
+/* ====== 모금 폼 스타일 추가 ====== */
+#donationForm {
+    width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+#donationForm h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+#donationForm label {
+    font-weight: bold;
+    margin-bottom: 4px;
+    display: inline-block;
+}
+#donationForm input[type="text"],
+#donationForm input[type="number"],
+#donationForm textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1.5px solid #bebebe;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    font-size: 1em;
+    resize: none;
+}
+
+#donationForm textarea {
+    min-height: 60px;
+}
+
+#donationForm button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007ffe;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#donationForm button[type="submit"]:hover {
+    background-color: #005bb5;
+}
+
+#donationList {
+    margin-bottom: 30px;
+}
+
+#donationList h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#donationList ul {
+    padding: 0;
+    margin: 0;
+}
+
+#donationList li {
+    background: #f0f6ff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 12px;
+    font-size: 0.97em;
+    word-break: keep-all;
+}
+
+#donationList_money li {
+    background: rgb(240, 246, 255);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 12px;
+}
+
+#donationUl {
+    list-style: none;
+    padding: 0;
+}

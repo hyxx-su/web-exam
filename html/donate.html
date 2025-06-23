@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>모금하기 페이지</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/donate.css">
 </head>
 <body>
 
 <header>
-    <div class="header-left"><a href="../html/main.html"><img src="../images/logo.png" alt="logo"></a></div>
+    <div class="header-left"><a href="/html/main.html"><img src="../images/logo.png" alt="logo"></a></div>
     <div class="header-center"><input id="search" type="text" placeholder="검색하기"></div>
     <div class="header-right">
         <a href="#"><b>홈</b></a>
@@ -37,21 +37,33 @@
     </div>
 
     <div class="main-form">
-        <h1>이런 <b><a href="#">장애인 복지 센터</a></b>에 관한<br>
-        검색 결과가 없습니다!😭</h1>
+        <form id="donationForm">
+            <h2>모금하기</h2>
+            <div>
+                <label for="name">이름</label><br>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="amount">금액 (원)</label><br>
+                <input type="number" id="amount" name="amount" min="1" required>
+            </div>
+            <div>
+                <label for="message">응원 메시지</label><br>
+                <textarea id="message" name="message" rows="3" placeholder="응원 메시지를 남겨주세요!"></textarea>
+            </div>
+            <div style="text-align:center; margin-top:15px;">
+                <button type="submit">모금하기</button>
+            </div>
+        </form>
     </div>
 
     <div class="right-ads">
-        <div class="find-center-right">
-            <div class="find-center-title">
-                <input type="text" placeholder="센터 입력">
-            </div>
-            <button>제출하기</button>
+        <div id="donationList">
         </div>
     </div>
 </div>
 
-<script src="../js/main.js"></script>
+<script src="../js/donate.js"></script>
 </body>
 <footer>
     <div class="dbox">
