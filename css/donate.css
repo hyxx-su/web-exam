@@ -133,6 +133,7 @@ nav a:hover {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
+
 .main-form a:hover{
     color: rgb(0, 127, 254);
     text-decoration: none;
@@ -266,6 +267,7 @@ nav ul li {
     padding: 12px;
     font-size: 0.97em;
     word-break: keep-all;
+    width: 100%;
 }
 
 #donationList_money li {
@@ -278,4 +280,5 @@ nav ul li {
 #donationUl {
     list-style: none;
     padding: 0;
+    width: 100%;
 }

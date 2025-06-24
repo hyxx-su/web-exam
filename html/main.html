@@ -2,68 +2,137 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>모금하기 페이지</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대장</title>
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+    <!-- ㅡㅡㅡㅡㅡㅡ 상단 필수 헤더 ㅡㅡㅡㅡㅡㅡ -->
+    <header>
+        <div><a href="../html/main.html"><img id="header_logo" src="../images/logo.png" alt="logo"></a></div>
 
-<header>
-    <div class="header-left"><a href="../html/main.html"><img src="../images/logo.png" alt="logo"></a></div>
-    <div class="header-center"><input id="search" type="text" placeholder="검색하기"></div>
-    <div class="header-right">
-        <a href="#"><b>홈</b></a>
-        <a href="#"><b>로그인</b></a>
-        <a href="#"><b>회원가입</b></a>
-    </div>
-</header>
+        <div class="header_search">
+            <img id="search_icon" src="../images/search_icon.png" alt="검색 아이콘">
+            <input id="search_input" type="text" placeholder=" 검색하기">
+        </div>
 
-<nav>
-    <div><a href="#">복지센터</a></div>
-    <div><a href="../html/donate.html">모금하기</a></div>
-    <div><a href="#">공지사항</a></div>
-    <div><a href="#">자원봉사 신청</a></div>
-    <div><a href="#">장애 교육</a></div>
-</nav>
+        <div class="header_buttons">
+            <a href="../html/main.html"><b>홈</b></a>
+            <a href="#"><b>로그인</b></a>
+            <a href="#"><b>회원가입</b></a>
+        </div>
+    </header>
 
-<div class="container">
+    <nav class="nav_menu">
+        <div><a href="../html/info.html">복지센터</a></div>
+        <div><a href="../html/donate.html">모금하기</a></div>
+        <div><a href="#">공지사항</a></div>
+        <div><a href="#">자원봉사 신청</a></div>
+        <div><a href="#">장애 교육</a></div>
+    </nav>
 
-    <div class="left-ads">
-        <div class="find-center-left">
-            <div class="find-center-title">
-                <input type="text" placeholder="센터 입력">
-            </div>
-            <button>제출하기</button>
+    <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+     
+    <div class="container">
+        <div class="img-container">
+            <div class="img1"><img src="https://news.gm.go.kr/news/photo/202001/13207_20431_223.png" alt=""></div>
+            <div class="img2"><img src="https://dimg.donga.com/wps/NEWS/IMAGE/2023/06/26/119914545.4.jpg" alt=""></div>
+            <div class="img3"><img src="https://cdn.seogwipo.co.kr/news/photo/202010/202714_202828_326.jpg" alt=""></div>
+            <div class="img5"><img src="https://cdn.socialfocus.co.kr/news/photo/201909/4857_6829_2036.jpg" alt=""></div>
+            <div class="img6"><img src="https://www.jejurehab.or.kr/files/attach/images/19546/845/020/a0460074b165c8eb743397d84fa8eddb.jpg" alt=""></div>
+            <div class="img7"><img src="https://cdn.socialfocus.co.kr/news/photo/201903/2732_3087_5328.jpg" alt=""></div>
+        </div>
+
+        <div class="cbox">
+            <table>
+                <hr>
+                <br>
+                <h1>일정표</h1><br>
+                <hr>
+                <br>
+                <br>
+                <h3>
+                    <button><</button>
+                    <b> ㅣ  2025.06  ㅣ </b>
+                    <button>></button>
+                </h3>
+                <br>
+                <thead>
+                    <tr>
+                        <th class="Stext">일요일</th>
+                        <th>월요일</th>
+                        <th>화요일</th>
+                        <th>수요일</th>
+                        <th>목요일</th>
+                        <th>금요일</th>
+                        <th class="Ttext">토요일</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><b>01</b></td>
+                        <td><b>02</b><ul><li>대구장애인이해교육수련활동 1일차</li></ul></td>
+                        <td><b>03</b><ul><li>대구장애인이해교육수련활동 2일차</li></ul></td>
+                        <td><b>04</b><ul><li>대구장애인이해교육수련활동 3일차</li><li>대구시 협의회</li></ul></td>
+                        <td><b class="Ttext">05</b></td>
+                    </tr>
+
+                    <tr>
+                        <td><b class="Stext">06</b></td>
+                        <td><b>07</b><ul><li>단체 독감 예방 접종</li></ul></td>
+                        <td><b>08</b></td>
+                        <td><b>09</b><ul><li>단체 설명회</li></ul></td>
+                        <td><b>10</b><ul><li>매너&에티켓 캠프</li></ul></td>
+                        <td><b>11</b><ul><li>직원 협의회 및 장애인 이해 관련 연수</li></ul></td>
+                        <td><b class="Ttext">12</b></td>
+                    </tr>
+
+                    <tr>
+                        <td><b class="Stext">13</b></td>
+                        <td><b>14</b><ul><li>가정폭력 예방교육</li></ul></td>
+                        <td><b>15</b></td>
+                        <td><b>16</b></td>
+                        <td><b>17</b></td>
+                        <td><b>18</b></td>
+                        <td class="Ttext"><b>19</b></td>
+                    </tr>
+
+                    <tr>
+                        <td><b class="Stext">20</b></td>
+                        <td><b>21</b><ul><li>생명존중교육</li></ul></td>
+                        <td><b>22</b></td>
+                        <td><b>23</b></td>
+                        <td><b>24</b></td>
+                        <td><b>25</b></td>
+                        <td class="Ttext"><b>26</b></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><b class="Stext">27</b></td>
+                        <td><b>28</b></td>
+                        <td><b>29</b></td>
+                        <td><b>30</b></td>
+                        <td colspan="3"></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
-
-    <div class="main-form">
-        <h1>이런 <b><a href="#">장애인 복지 센터</a></b>에 관한<br>
-        검색 결과가 없습니다!😭</h1>
-    </div>
-
-    <div class="right-ads">
-        <div class="find-center-right">
-            <div class="find-center-title">
-                <input type="text" placeholder="센터 입력">
-            </div>
-            <button>제출하기</button>
-        </div>
-    </div>
-</div>
-
-<script src="../js/main.js"></script>
-</body>
-<footer>
-    <div class="dbox">
-            <nav id="top_menu">
+        
+    <footer>
+        <nav class="footer_nav">
             <ul>
-            <li><a href="#">이용약관</a></li>
-            <li><a href="#">개인정보처리방침</a></li>
-            <li><a>사업자 : 대장복지센터</a></li>
-            <li><a>010-3535-5606</a></li>
-            <li><a href="https://www.qia.go.kr/listindexWebAction.do" target="_blank">대구장애인복지관(http://dgrc.or.kr/dgrc/)</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">도움말</a></li>
+                <li>사업자 : 대장복지센터</li>
+                <li>연락처 : 010-3535-5606</li>
+                <li><a href="https://www.qia.go.kr/listindexWebAction.do" target="_blank">대구장애인복지관</a></li>
             </ul>
-            </nav>
-        </div>
-</footer>
+        </nav>
+    </footer>
+</body>
 </html>

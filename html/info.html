@@ -2,51 +2,98 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>모금하기 페이지</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>복지센터정보</title>
     <link rel="stylesheet" href="../css/info.css">
 </head>
 <body>
+    
+<!-- ㅡㅡㅡㅡㅡㅡ 상단 필수 헤더 ㅡㅡㅡㅡㅡㅡ -->
+    <header>
+        <div><a href="../html/main.html"><img id="header_logo" src="../images/logo.png" alt="logo"></a></div>
 
-<header>
-    <div class="header-left">로고 | 사이트 이름</div>
-    <div class="header-cneter"><input id="search" type="text" placeholder="검색하기"></div>
-    <div class="header-right">
-        <a href="#"><b>홈</b></a>
-        <a href="#"><b>로그인</b></a>
-        <a href="#"><b>회원가입</b></a>
-    </div>
-</header>
+        <div class="header_search">
+            <img id="search_icon" src="../images/search_icon.png" alt="검색 아이콘">
+            <input id="search_input" type="text" placeholder=" 검색하기">
+        </div>
 
-<nav>
-    <div><a href="#">장애인 복지 센터</a></div>
-    <div><a href="#">모금하기</a></div>
-    <div><a href="#">공지사항</a></div>
-    <div><a href="#">자원봉사 신청</a></div>
-    <div><a href="#">장애 교육</a></div>
-</nav>
+        <div class="header_buttons">
+            <a href="../html/main.html"><b>홈</b></a>
+            <a href="#"><b>로그인</b></a>
+            <a href="#"><b>회원가입</b></a>
+        </div>
+    </header>
 
-<div class="container">
+    <nav class="nav_menu">
+        <div><a href="../html/info.html">복지센터</a></div>
+        <div><a href="../html/donate.html">모금하기</a></div>
+        <div><a href="#">공지사항</a></div>
+        <div><a href="#">자원봉사 신청</a></div>
+        <div><a href="#">장애 교육</a></div>
+    </nav>
 
-    <div class="main-form">
-        <h1>이런 <b><a href="#">장애인 복지 센터</a></b>에 관한<br>
-        검색 결과가 없습니다!😭</h1>
-    </div>
+<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+     
 
-    <div class="right-ads">
-        <div class="find-center">
-            <div class="find-center-title">
-                <input type="text" placeholder="센터 입력">
+    <div class="container">
+        <div class="main-form">
+            <h1><b>대구 명곡역 복지 센터</b>에 관한 정보 입니다!</h1>
+            <div class="box">
+                <div class="mk-img"><img src="../images/map.png" alt=""></div>
+                <div class="explain">
+                    <h2><b>위치: <a href="#">설화 명곡역</a></b></h2>
+                    <h3>선택된 복지센터 정보</h3>
+                    <p><strong>이름:</strong><a href="#"> 대구 명곡역 복지 센터</a></p>
+                    <p><strong>주소:</strong><a href="#"> 대구광역시 달성군 화원읍 비슬로 2476 (설화리) </a></p>
+                    <p><strong>운영시간:</strong> 평일 09:00 ~ 18:00</p>
+                    <p><strong>전화번호:</strong><a href="#"> 053-123-4567</a></p>
+                    <h3>이용 가능한 프로그램</h3>
+                    <ul>
+                        <li><a href="#">언어 재활 서비스</a></li>
+                        <li><a href="#">심리 상담 프로그램</a></li>
+                        <li><a href="#">자립 지원 교육</a></li>
+                        <li><a href="#">현수 강화 프로그램</a></li>
+                        <li><a href="#">산업체 도움꾼 체험</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+
+        <div class="right-ads">
+            <div class="find-center">
+                <div class="high">
+                    <div class="find-center-title">
+                        <input id="centerInput" type="text" placeholder="🔎 센터 입력" value="대구 명곡역 복지 센터">
+                    </div>
+                    <div class="btn">
+                        <button onclick="">검색</button>
+                    </div>
+                </div>
+
+                <div class="centers">
+                    <ul>
+                        <div class="li"><li><a href="#"><b>서울 복지 센터들</b></a></li></div>
+                        <div class="li"><li><a href="#"><b>대구 복지 센터들</b></a></li></div>
+                        <div class="li"><li><a href="#"><b>부산 복지 센터들</b></a></li></div>
+                        <div class="li"><li><a href="#"><b>광주 복지 센터들</b></a></li></div>
+                        <div class="li"><li><a href="#"><b>대전 복지 센터들</b></a></li></div>
+                    </ul>
+                </div>
             </div>
-            <button>제출하기</button>
         </div>
     </div>
-</div>
 
-<script src="../js/info.js"></script>
+    <footer>
+        <nav class="footer_nav">
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">도움말</a></li>
+                <li>사업자 : 대장복지센터</li>
+                <li>연락처 : 010-3535-5606</li>
+                <li><a href="https://www.qia.go.kr/listindexWebAction.do" target="_blank">대구장애인복지관</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
-<footer>
-    <div class="info">
-        d
-    </div>
-</footer>
 </html>
