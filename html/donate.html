@@ -7,16 +7,22 @@
 </head>
 <body>
 
-<!-- ㅡㅡㅡㅡㅡㅡ 상단 필수 헤더 ㅡㅡㅡㅡㅡㅡ -->
-    
+<!-- ===== 상단 필수 헤더 영역 시작 ===== -->
     <header>
+        
+        <!-- 로고 영역 -->
+        
         <div><a href="../html/main.html"><img id="header_logo" src="../images/logo.png" alt="logo"></a></div>
-
+        
+        <!-- 검색창 영역 -->
+        
         <div class="header_search">
             <img id="search_icon" src="../images/search_icon.png" alt="검색 아이콘">
             <input id="search_input" type="text" placeholder=" 검색하기">
         </div>
-
+        
+        <!-- 상단 버튼(홈/로그인/회원가입) -->
+        
         <div class="header_buttons">
             <a href="../html/main.html"><b>홈</b></a>
             <a href="#"><b>로그인</b></a>
@@ -24,6 +30,8 @@
         </div>
     </header>
 
+    <!-- ===== 내비게이션 메뉴 영역 ===== -->
+    
     <nav class="nav_menu">
         <div><a href="../html/info.html">복지센터</a></div>
         <div><a href="../html/donate.html">모금하기</a></div>
@@ -32,10 +40,12 @@
         <div><a href="#">장애 교육</a></div>
     </nav>
 
-<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
-
+<!-- ===== 메인 컨텐츠(모금 폼/광고/내역) ===== -->
+   
     <div class="container">
-
+        
+        <!-- 좌측 안내 영역 -->
+        
         <div class="left-ads">
             <div class="find-center-left">
                 <h4>모금 활동</h4>
@@ -44,6 +54,8 @@
             </div>
         </div>
 
+        <!-- 모금 폼 영역 -->
+        
         <div class="main-form">
             <form id="donation_Form">
                 <h2>모금하기</h2>
@@ -60,11 +72,14 @@
                     <textarea id="message" name="message" rows="3" placeholder="응원의 메시지를 남겨주세요!"></textarea>
                 </div>
                 <div style="text-align:center; margin-top:15px;">
+                    <!-- 모금하기 버튼: 입력값을 받아 addTask() 함수 실행 -->
                     <button type="button" onclick="addTask()">모금하기</button>
                 </div>
             </form>
         </div>
 
+        <!-- 우측 최근 모금 내역 영역 -->
+        
         <div class="right-ads">
             <div id="donation_List">
                 <h3>최근 모금 내역</h3><br><hr>
@@ -75,7 +90,7 @@
         </div>
     </div>
 
-<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+<!-- ===== footer 영역 ===== -->
 
     <footer>
         <nav class="footer_nav">
@@ -90,10 +105,10 @@
         </nav>
     </footer>
 
-<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+<!-- ===== JS 연결 ===== -->
 
 <script src="../js/donate.js"></script>
 
-<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+<!-- ================= -->
 </body>
 </html>

@@ -6,18 +6,18 @@
     <title>대장</title>
     <link rel="stylesheet" href="../css/main.css">
 </head>
-<body>
+<body >
 
-<!-- ㅡㅡㅡㅡㅡㅡ 상단 필수 헤더 ㅡㅡㅡㅡㅡㅡ -->
- 
+<!-- ===== 상단 필수 헤더 영역 시작 ===== -->
     <header>
+        <!-- 로고 영역 -->
         <div><a href="../html/main.html"><img id="header_logo" src="../images/logo.png" alt="logo"></a></div>
-
+        <!-- 검색창 영역 -->
         <div class="header_search">
             <img id="search_icon" src="../images/search_icon.png" alt="검색 아이콘">
             <input id="search_input" type="text" placeholder=" 검색하기">
         </div>
-
+        <!-- 상단 버튼(홈/로그인/회원가입) -->
         <div class="header_buttons">
             <a href="../html/main.html"><b>홈</b></a>
             <a href="#"><b>로그인</b></a>
@@ -25,6 +25,7 @@
         </div>
     </header>
 
+    <!-- ===== 내비게이션 메뉴 영역 ===== -->
     <nav class="nav_menu">
         <div><a href="../html/info.html">복지센터</a></div>
         <div><a href="../html/donate.html">모금하기</a></div>
@@ -33,9 +34,9 @@
         <div><a href="#">장애 교육</a></div>
     </nav>
 
-<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
-     
+<!-- ===== 메인 컨텐츠(이미지 그리드 + 일정표) ===== -->
     <div class="container">
+        <!-- 이미지 그리드 영역 -->
         <div class="img-container">
             <div class="img1"><img src="https://news.gm.go.kr/news/photo/202001/13207_20431_223.png" alt=""></div>
             <div class="img2"><img src="https://dimg.donga.com/wps/NEWS/IMAGE/2023/06/26/119914545.4.jpg" alt=""></div>
@@ -45,6 +46,7 @@
             <div class="img7"><img src="https://cdn.socialfocus.co.kr/news/photo/201903/2732_3087_5328.jpg" alt=""></div>
         </div>
 
+        <!-- 일정표(캘린더) 영역 -->
         <div class="cbox">
             <table>
                 <hr>
@@ -54,9 +56,9 @@
                 <br>
                 <br>
                 <h3>
-                    <button><</button>
-                    <b> ㅣ  2025.06  ㅣ </b>
-                    <button>></button>
+                    <button>&#60;</button> <!-- &#60;는 "<"를 나타내는 문자 엔티티 -->
+                    <b> ㅣ  2025.06  ㅣ </b> <!-- 현재 연월 -->
+                    <button>&#62;</button> <!-- &#62;는 ">"를 나타내는 문자 엔티티 -->
                 </h3>
                 <br>
                 <thead>
@@ -124,7 +126,7 @@
         </div>
     </div>
         
-<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+<!-- ===== footer 영역 ===== -->
 
     <footer>
         <nav class="footer_nav">
@@ -139,6 +141,10 @@
         </nav>
     </footer>
 
-<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+<!-- ===== JS 영역 ===== -->
+
+    <script src="../js/main.js"></script>
+
+<!-- ================= -->
 </body>
 </html>
