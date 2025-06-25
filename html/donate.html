@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>모금하기 페이지</title>
+    <link rel="stylesheet" href="../css/donate.css">
+</head>
+<body>
+
+<!-- ㅡㅡㅡㅡㅡㅡ 상단 필수 헤더 ㅡㅡㅡㅡㅡㅡ -->
+    
+    <header>
+        <div><a href="../html/main.html"><img id="header_logo" src="../images/logo.png" alt="logo"></a></div>
+
+        <div class="header_search">
+            <img id="search_icon" src="../images/search_icon.png" alt="검색 아이콘">
+            <input id="search_input" type="text" placeholder=" 검색하기">
+        </div>
+
+        <div class="header_buttons">
+            <a href="../html/main.html"><b>홈</b></a>
+            <a href="#"><b>로그인</b></a>
+            <a href="#"><b>회원가입</b></a>
+        </div>
+    </header>
+
+    <nav class="nav_menu">
+        <div><a href="../html/info.html">복지센터</a></div>
+        <div><a href="../html/donate.html">모금하기</a></div>
+        <div><a href="#">공지사항</a></div>
+        <div><a href="#">자원봉사 신청</a></div>
+        <div><a href="#">장애 교육</a></div>
+    </nav>
+
+<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+    <div class="container">
+
+        <div class="left-ads">
+            <div class="find-center-left">
+                <h4>모금 활동</h4>
+                <p>여러 교육 활동을 하려고 하는데,</p>
+                <p>여러분들의 힘이 필요합니다.</p>
+            </div>
+        </div>
+
+        <div class="main-form">
+            <form id="donationForm">
+                <h2>모금하기</h2>
+                <div>
+                    <label for="name">이름</label><br>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="amount">금액 (원)</label><br>
+                    <input type="number" id="amount" name="amount" min="1" required>
+                </div>
+                <div>
+                    <label for="message">응원 메시지</label><br>
+                    <textarea id="message" name="message" rows="3" placeholder="응원 메시지를 남겨주세요!"></textarea>
+                </div>
+                <div style="text-align:center; margin-top:15px;">
+                    <button type="submit">모금하기</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="right-ads">
+            <div id="donationList">
+            </div>
+        </div>
+    </div>
+
+<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+    <footer>
+        <nav class="footer_nav">
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">도움말</a></li>
+                <li>사업자 : 대장복지센터</li>
+                <li>연락처 : 010-3535-5606</li>
+                <li><a href="https://www.qia.go.kr/listindexWebAction.do" target="_blank">대구장애인복지관</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+<script src="../js/donate.js"></script>
+
+<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+</body>
+</html>
