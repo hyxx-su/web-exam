@@ -45,7 +45,7 @@
         </div>
 
         <div class="main-form">
-            <form id="donationForm">
+            <form id="donation_Form">
                 <h2>모금하기</h2>
                 <div>
                     <label for="name">이름</label><br>
@@ -56,17 +56,21 @@
                     <input type="number" id="amount" name="amount" min="1" required>
                 </div>
                 <div>
-                    <label for="message">응원 메시지</label><br>
-                    <textarea id="message" name="message" rows="3" placeholder="응원 메시지를 남겨주세요!"></textarea>
+                    <label for="message">후원 메시지</label><br>
+                    <textarea id="message" name="message" rows="3" placeholder="응원의 메시지를 남겨주세요!"></textarea>
                 </div>
                 <div style="text-align:center; margin-top:15px;">
-                    <button type="submit">모금하기</button>
+                    <button type="button" onclick="addTask()">모금하기</button>
                 </div>
             </form>
         </div>
 
         <div class="right-ads">
-            <div id="donationList">
+            <div id="donation_List">
+                <h3>최근 모금 내역</h3><br><hr>
+                <ul id="donation_UI">
+                    <!-- 모금 내역 -->
+                </ul>
             </div>
         </div>
     </div>

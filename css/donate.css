@@ -28,8 +28,10 @@ header .header_search {
 }
 
 header #search_icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
     margin: 6px;
-    align-items: center;
 }
 
 header #search_input {
@@ -195,25 +197,23 @@ header a:hover {
 /* ----------- */
 
 /* ====== 모금 폼 스타일 추가 ====== */
-#donationForm {
+#donation_Form {
     width: 350px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
-#donationForm h2 {
+#donation_Form h2 {
     text-align: center;
     margin-bottom: 10px;
 }
-#donationForm label {
+#donation_Form label {
     font-weight: bold;
     margin-bottom: 4px;
     display: inline-block;
 }
-#donationForm input[type="text"],
-#donationForm input[type="number"],
-#donationForm textarea {
+#donation_Form input[type="text"], #donation_Form input[type="number"], #donation_Form textarea {
     width: 100%;
     padding: 10px 0px;
     border-radius: 8px;
@@ -224,11 +224,11 @@ header a:hover {
     resize: none;
 }
 
-#donationForm textarea {
+#donation_Form textarea {
     min-height: 60px;
 }
 
-#donationForm button[type="submit"] {
+#donation_Form button[type="button"] {
     width: 100%;
     padding: 12px 0px;
     background-color: #007ffe;
@@ -239,43 +239,175 @@ header a:hover {
     font-weight: bold;
 }
 
-#donationForm button[type="submit"]:hover {
+#donation_Form button[type="button"]:hover {
     background-color: #005bb5;
 }
 
-#donationList {
-    margin-bottom: 30px;
+#donation_List {
+    max-height: 100%;
+    overflow-y: auto;
 }
 
-#donationList h3 {
+#donation_List h3 {
     text-align: center;
     margin-bottom: 10px;
 }
 
-#donationList ul {
+#donation_List ul {
     padding: 0;
     margin: 0;
 }
 
-#donationList li {
+#donation_UI li {
     background: #f0f6ff;
     border-radius: 8px;
-    margin-bottom: 10px;
     padding: 12px;
-    font-size: 0.97em;
-    word-break: keep-all;
+    font-size: 1em;
     width: 100%;
 }
 
-#donationList_money li {
-    background: rgb(240, 246, 255);
-    border-radius: 8px;
-    margin-bottom: 10px;
-    padding: 12px;
+#donation_UI {
+    list-style:none;
+    padding:0;
 }
 
-#donationUl {
-    list-style: none;
-    padding: 0;
-    width: 100%;
+/* === 반응형: 모바일/태블릿 === */
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+        height: auto;
+        padding: 10px 0;
+    }
+    header > div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 6px;
+    }
+    header .header_search {
+        width: 90%;
+        margin: 0 auto 8px auto;
+    }
+    header .header_buttons {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+    header #header_logo {
+        height: 40px;
+        margin: 0 0 8px 0;
+    }
+    header #search_icon {
+        width: 22px;
+        height: 22px;
+        margin: 4px;
+    }
+    .footer_nav ul li {
+        margin: 0 10px;
+        padding: 0 4px;
+        font-size: 0.9rem;
+    }
+    .nav_menu {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+        padding: 8px 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+        height: auto;
+        padding: 6px 0;
+    }
+    header > div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4px;
+    }
+    header .header_search {
+        width: 98%;
+        margin: 0 auto 6px auto;
+        height: 32px;
+    }
+    header .header_buttons {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+    header #header_logo {
+        height: 32px;
+        margin: 0 0 6px 0;
+    }
+    header #search_icon {
+        width: 20px;
+        height: 20px;
+        margin: 2px;
+    }
+    header a {
+        font-size: 0.95rem;
+        margin: 6px;
+    }
+    .footer_nav ul li {
+        margin: 0 10px;
+        padding: 0 4px;
+        font-size: 0.9rem;
+    }
+    .nav_menu {
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.95rem;
+        padding: 6px 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+        height: auto;
+        padding: 2px 0;
+    }
+    header > div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2px;
+    }
+    header .header_search {
+        width: 100%;
+        margin: 0 auto 2px auto;
+        height: 28px;
+    }
+    header .header_buttons {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+    header #header_logo {
+        height: 24px;
+        margin: 0 0 2px 0;
+    }
+    header #search_icon {
+        width: 16px;
+        height: 16px;
+        margin: 1px;
+    }
+    header a {
+        font-size: 0.85rem;
+        margin: 4px;
+    }
+    .footer_nav ul li {
+        margin: 0 2px;
+        padding: 0 2px;
+        font-size: 0.8rem;
+    }
+    .nav_menu {
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.85rem;
+        padding: 4px 0;
+    }
 }
