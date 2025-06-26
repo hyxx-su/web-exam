@@ -8,17 +8,22 @@
 </head>
 <body>
     
-<!-- ㅡㅡㅡㅡㅡㅡ 상단 필수 헤더 ㅡㅡㅡㅡㅡㅡ -->
+<!-- ===== 상단 필수 헤더 영역 시작 ===== -->
     
     <header>
-        <div class="header_left">
-            <div><a href="../html/main.html"><img id="header_logo" src="../images/logo.png" alt="logo"></a></div>
-
-            <div class="header_search">
-                <img id="search_icon" src="../images/search_icon.png" alt="검색 아이콘">
-                <input id="search_input" type="text" placeholder=" 검색하기">
-            </div>
+        
+        <!-- 로고 영역 -->
+        
+        <div><a href="../html/main.html"><img id="header_logo" src="../images/logo.png" alt="logo"></a></div>
+        
+        <!-- 검색창 영역 -->
+        
+        <div class="header_search">
+            <img id="search_icon" src="../images/search_icon.png" alt="검색 아이콘">
+            <input id="search_input" type="text" placeholder=" 검색하기">
         </div>
+        
+        <!-- 상단 버튼(홈/로그인/회원가입) -->
         
         <div class="header_buttons">
             <a href="../html/main.html"><b>홈</b></a>
@@ -27,6 +32,8 @@
         </div>
     </header>
 
+    <!-- ===== 내비게이션 메뉴 영역 ===== -->
+    
     <nav class="nav_menu">
         <div><a href="../html/info.html">복지센터</a></div>
         <div><a href="../html/donate.html">모금하기</a></div>
@@ -35,14 +42,22 @@
         <div><a href="#">장애 교육</a></div>
     </nav>
 
-<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
-     
-
+<!-- ===== 메인 컨텐츠(센터 정보/지도/프로그램/검색) ===== -->
+    
     <div class="container">
         <div class="main-form">
+            
+            <!-- 센터 정보 제목 -->
+            
             <h1><b>대구 명곡역 복지 센터</b>에 관한 정보 입니다!</h1>
             <div class="box">
+                
+                <!-- 지도 이미지 -->
+                
                 <div class="mk-img"><img src="../images/map.png" alt=""></div>
+                
+                <!-- 센터 상세 정보 -->
+                
                 <div class="explain">
                     <h2><b>위치: <a href="#">설화 명곡역</a></b></h2>
                     <h3>선택된 복지센터 정보</h3>
@@ -62,9 +77,14 @@
             </div> 
         </div>
 
+        <!-- 우측 센터 검색 및 추천 리스트 -->
+        
         <div class="right-ads">
             <div class="find-center">
                 <div class="high">
+                    
+                    <!-- 센터 검색 입력창 -->
+                    
                     <div class="find-center-title">
                         <input id="centerInput" type="text" placeholder="🔎 센터 입력" value="대구 명곡역 복지 센터">
                     </div>
@@ -72,6 +92,8 @@
                         <button onclick="">검색</button>
                     </div>
                 </div>
+                
+                <!-- 센터 리스트 -->
 
                 <div class="centers">
                     <ul>
@@ -86,7 +108,7 @@
         </div>
     </div>
 
-<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+<!-- ===== footer 영역 ===== -->
 
     <footer>
         <nav class="footer_nav">
@@ -101,6 +123,6 @@
         </nav>
     </footer>
 
-<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+<!-- ================= -->
 </body>
 </html>

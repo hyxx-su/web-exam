@@ -1,0 +1,63 @@
+body {
+    margin: 0; /* 바깥 여백 없음 */
+    padding: 0; /* 패딩 없음 */
+    background: #f8f9fa; /* 배경색 연회색 */
+    font-family: 'Noto Sans KR', Arial, sans-serif; /* 폰트 지정 */
+    display: flex; /* flexbox 레이아웃 */
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    height: 100vh; /* 높이 화면 전체 */
+}
+
+.notice-popup {
+    background: #fff; /* 배경 흰색 */
+    border-radius: 16px; /* 둥근 모서리 16px */
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15); /* 그림자 효과 */
+    padding: 32px 24px 24px 24px; /* 위32, 좌우24, 아래24px 패딩 */
+    max-width: 400px; /* 최대 너비 400px */
+    width: 90%; /* 너비 90% */
+    text-align: center; /* 가운데 정렬 */
+}
+
+.notice-popup h2 {
+    margin-top: 0; /* 위쪽 마진 없음 */
+    color: #2d5be3; /* 글자색 파랑 */
+    font-size: 1.6rem; /* 글자 크기 1.6rem */
+    margin-bottom: 16px; /* 아래 마진 16px */
+}
+
+.notice-popup p {
+    color: #333; /* 글자색 진회색 */
+    font-size: 1.05rem; /* 글자 크기 1.05rem */
+    margin-bottom: 24px; /* 아래 마진 24px */
+    line-height: 1.6; /* 줄 간격 1.6 */
+}
+
+.notice-popup button {
+    background: #2d5be3; /* 배경 파랑 */
+    color: #fff; /* 글자색 흰색 */
+    border: none; /* 테두리 없음 */
+    border-radius: 8px; /* 둥근 모서리 8px */
+    padding: 10px 32px; /* 위아래 10px, 좌우 32px 패딩 */
+    font-size: 1rem; /* 글자 크기 1rem */
+    cursor: pointer; /* 마우스 포인터 변경 */
+    transition: background 0.2s; /* 배경색 전환 효과 */
+}
+
+.notice-popup button:hover {
+    background: #1741a6; /* 마우스 오버 시 진한 파랑 */
+}
+
+@media (max-width: 480px) {
+    .notice-popup {
+        padding: 18px 6px 16px 6px; /* 위18, 좌우6, 아래16px 패딩 */
+        font-size: 0.95rem; /* 글자 크기 0.95rem */
+    }
+    .notice-popup h2 {
+        font-size: 1.2rem; /* 글자 크기 1.2rem */
+    }
+    .notice-popup button {
+        padding: 8px 18px; /* 위아래 8px, 좌우 18px 패딩 */
+        font-size: 0.95rem; /* 글자 크기 0.95rem */
+    }
+}
