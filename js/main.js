@@ -20,10 +20,8 @@ function openPopup() {
     }
 };
 
-// 현재 페이지의 URL에서 파일명만 추출하는 것
-const currenPage = window.location.pathname.split("/").pop();
-
-// 파일명이 main.html일 때만 팝업 실행
-if (currentPage === "main.html") {
+// 현재 URL에 'main.html'이 포함되어 있는지 확인
+if (document.location.href.includes("main.html")) {
+    // 포함되어 있다면 창을 열 때 openPopup을 작동시킴
     window.addEventListener('DOMContentLoaded', openPopup);
 }
