@@ -20,5 +20,10 @@ function openPopup() {
     }
 };
 
-// 페이지가 완전히 로드되면 공지사항 팝업 자동 실행
-window.addEventListener('DOMContentLoaded', openPopup);
+// 현재 페이지의 URL에서 파일명만 추출하는 것
+const currenPage = window.location.pathname.split("/").pop();
+
+// 파일명이 main.html일 때만 팝업 실행
+if (currentPage === "main.html") {
+    window.addEventListener('DOMContentLoaded', openPopup);
+}
