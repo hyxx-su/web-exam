@@ -1,0 +1,410 @@
+body {
+    margin: 0; /* 바깥 여백 없음 */
+    background-color: white; /* 배경색 흰색 */
+    box-sizing: border-box; /* 박스 크기 계산 방식 변경 */
+}
+
+header {
+    width: 100%; /* 전체 너비 사용 */
+    height: 50px; /* 높이 50px로 지정 */
+    padding: 10px 0px; /* 위아래 10px 패딩 */
+    display: flex; /* flexbox 레이아웃 */
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: space-between; /* 좌우 끝 정렬 */
+}
+
+header #header_logo {
+    margin: 12px; /* 바깥 여백 12px */
+    height: 48px; /* 높이 48px로 지정 */
+}
+
+header .header_search {
+    height: 36px; /* 높이 36px로 지정 */
+    width: 40%; /* 너비 40% */
+    margin: 0 20px; /* 좌우 20px 마진 */
+    border: 1px solid black; /* 테두리 1px 검정 */
+    border-radius: 36px; /* 둥근 모서리 36px */
+    display: flex; /* 내부 아이템 가로 배치 */
+}
+
+header #search_icon {
+    width: 24px; /* 너비 24px */
+    height: 24px; /* 높이 24px로 지정 */
+    object-fit: contain; /* 비율 유지하며 맞춤 */
+    margin: 6px; /* 바깥 여백 6px */
+}
+
+header #search_input {
+    width: 92%; /* 너비 92% */
+    border: none; /* 테두리 없음 */
+    align-self: center; /* 세로 중앙 정렬 */
+    border-radius: 36px; /* 둥근 모서리 36px */
+}
+
+header .header_buttons {
+    display: flex; /* flexbox 레이아웃 */
+    align-items: center; /* 세로 중앙 정렬 */
+    width: 13%; /* 너비 13% */
+    justify-content: space-between; /* 좌우 끝 정렬 */
+    margin-right: 12px; /* 오른쪽 마진 12px */
+}
+
+header .header_search input:focus {
+    outline: none; /* 포커스 시 외곽선 제거 */
+}
+
+header a {
+    margin: 12px; /* 바깥 여백 12px */
+    color: #342e2f; /* 글자색 */
+    text-decoration: none; /* 밑줄 없음 */
+}
+
+header a:hover {
+    color: rgb(0, 127, 254); /* 마우스 오버 시 색상 */
+    text-decoration: none; /* 밑줄 없음 */
+}
+
+.nav_menu {
+    display: flex; /* flexbox 레이아웃 */
+    width: 100%; /* 전체 너비 */
+    justify-content: space-evenly; /* 균등 간격 배치 */
+    background-color: #342e2f; /* 배경색 */
+    color: rgb(0, 0, 0); /* 글자색 */
+    margin-top: 10px; /* 위쪽 마진 10px */
+    padding: 10px 0px; /* 위아래 10px 패딩 */
+    border-top: 1px solid black; /* 위쪽 테두리 */
+    border-bottom: 1px solid black; /* 아래쪽 테두리 */
+}
+
+.nav_menu a{
+    color: white; /* 글자색 흰색 */
+    text-decoration: none; /* 밑줄 없음 */
+    font-weight: bold; /* 굵은 글씨 */
+}
+
+.nav_menu a:hover {
+    color: rgb(0, 127, 254); /* 마우스 오버 시 색상 */
+    text-decoration: none; /* 밑줄 없음 */
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.container {
+    display: flex; /* flexbox 레이아웃 */
+    padding: 30px; /* 전체 패딩 30px */
+    background-color: #f5f5f5; /* 배경색 연회색 */
+}
+  
+.main-form {
+    flex: 1; /* 남은 공간 모두 차지 */
+    background-color: #ffffff; /* 배경 흰색 */
+    padding: 20px; /* 패딩 20px */
+    display: flex; /* flexbox 레이아웃 */
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    gap: 10px; /* 아이템 간격 10px */
+    height: 580px; /* 높이 580px로 지정 */
+    border-radius: 12px; /* 둥근 모서리 12px */
+    margin: 0px 20px; /* 좌우 마진 20px */
+}
+
+.main-form button {
+    padding: 10px; /* 패딩 10px */
+    background-color: #000000; /* 배경 검정 */
+    color: white; /* 글자색 흰색 */
+    border: none; /* 테두리 없음 */
+    cursor: pointer; /* 마우스 포인터 변경 */
+}
+
+.left-ads {
+    width: 20%; /* 너비 20% */
+    display: flex; /* flexbox 레이아웃 */
+    flex-direction: column; /* 세로 배치 */
+    margin-left: 0px auto; /* 왼쪽 마진 0, 자동 */
+    padding: 20px; /* 패딩 20px */
+    background-color: #ffffff; /* 배경 흰색 */
+    height: 580px; /* 높이 580px로 지정 */
+    border-radius: 12px; /* 둥근 모서리 12px */
+}
+
+.right-ads {
+    width: 20%; /* 너비 20% */
+    display: flex; /* flexbox 레이아웃 */
+    flex-direction: column; /* 세로 배치 */
+    margin-left: 0px auto; /* 왼쪽 마진 0, 자동 */
+    padding: 20px; /* 패딩 20px */
+    background-color: #ffffff; /* 배경 흰색 */
+    height: 580px; /* 높이 580px로 지정 */
+    border-radius: 12px; /* 둥근 모서리 12px */
+}
+
+.find-center-left p {
+    margin: 0px 0px 0px 8px; /* 왼쪽 마진 8px */
+}
+
+.main-form h1{
+    text-align: center; /* 가운데 정렬 */
+}
+
+.main-form a{
+    color: rgb(0, 0, 0); /* 글자색 검정 */
+    text-decoration: none; /* 밑줄 없음 */
+}
+
+.main-form a:hover{
+    color: rgb(0, 127, 254); /* 마우스 오버 시 색상 */
+    text-decoration: none; /* 밑줄 없음 */
+}
+
+.find-center-title {
+    display: flex; /* flexbox 레이아웃 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    margin-top: 18px; /* 위쪽 마진 18px */
+    border-radius: 50px; /* 둥근 모서리 50px */
+    color: #bebebe; /* 글자색 연회색 */
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.footer_nav > ul {
+    border-top: 1px solid gainsboro; /* 위쪽 테두리 */
+    border-bottom: 1px solid gainsboro; /* 아래쪽 테두리 */
+    height: 40px; /* 높이 40px로 지정 */
+    line-height: 40px; /* 줄 높이 40px */
+    text-align: center; /* 가운데 정렬 */
+    padding: 0px; /* 패딩 없음 */
+    clear: both; /* float 해제 */
+    margin-bottom: 0px; /* 아래 마진 없음 */
+}
+
+.footer_nav ul li {
+    display: inline; /* 가로 배치 */
+    padding: 0px 10px; /* 좌우 패딩 10px */
+    margin: 0px 40px; /* 좌우 마진 40px */
+}
+
+.footer_nav ul li a {
+    color: #342e2f; /* 글자색 */
+    font-weight: bold; /* 굵은 글씨 */
+    text-decoration: none; /* 밑줄 없음 */
+}
+
+.footer_nav ul li a:hover {
+    color: rgb(0, 127, 254); /* 마우스 오버 시 색상 */
+    text-decoration: none; /* 밑줄 없음 */
+}
+/* ----------- */
+
+/* ====== 모금 폼 스타일 추가 ====== */
+#donation_Form {
+    width: 350px; /* 너비 350px */
+    margin: 0 auto; /* 가운데 정렬 */
+    display: flex; /* flexbox 레이아웃 */
+    flex-direction: column; /* 세로 배치 */
+    gap: 18px; /* 아이템 간격 18px */
+}
+#donation_Form h2 {
+    text-align: center; /* 가운데 정렬 */
+    margin-bottom: 10px; /* 아래 마진 10px */
+}
+#donation_Form label {
+    font-weight: bold; /* 굵은 글씨 */
+    margin-bottom: 4px; /* 아래 마진 4px */
+    display: inline-block; /* 인라인 블록 */
+}
+#donation_Form input[type="text"], #donation_Form input[type="number"], #donation_Form textarea {
+    width: 100%; /* 너비 100% */
+    padding: 10px 0px; /* 위아래 10px 패딩 */
+    border-radius: 8px; /* 둥근 모서리 8px */
+    border: 1.5px solid #bebebe; /* 테두리 1.5px 연회색 */
+    margin-top: 4px; /* 위쪽 마진 4px */
+    margin-bottom: 2px; /* 아래 마진 2px */
+    font-size: 1em; /* 글자 크기 1em */
+    resize: none; /* 크기 조절 불가 */
+}
+
+#donation_Form textarea {
+    min-height: 60px; /* 최소 높이 60px */
+}
+
+#donation_Form button[type="button"] {
+    width: 100%; /* 너비 100% */
+    padding: 12px 0px; /* 위아래 12px 패딩 */
+    background-color: #007ffe; /* 배경 파랑 */
+    color: white; /* 글자색 흰색 */
+    border: none; /* 테두리 없음 */
+    border-radius: 8px; /* 둥근 모서리 8px */
+    font-size: 1.1em; /* 글자 크기 1.1em */
+    font-weight: bold; /* 굵은 글씨 */
+}
+
+#donation_Form button[type="button"]:hover {
+    background-color: #005bb5; /* 마우스 오버 시 진한 파랑 */
+}
+
+#donation_List {
+    max-height: 100%; /* 최대 높이 100% */
+    overflow-y: auto; /* 세로 스크롤 */
+}
+
+#donation_List h3 {
+    text-align: center; /* 가운데 정렬 */
+    margin-bottom: 10px; /* 아래 마진 10px */
+}
+
+#donation_List ul {
+    padding: 0; /* 패딩 없음 */
+    margin: 0; /* 마진 없음 */
+}
+
+#donation_UI li {
+    background: #f0f6ff; /* 배경 연파랑 */
+    border-radius: 8px; /* 둥근 모서리 8px */
+    padding: 12px; /* 패딩 12px */
+    font-size: 1em; /* 글자 크기 1em */
+    width: 100%; /* 너비 100% */
+}
+
+#donation_UI {
+    list-style:none; /* 리스트 마커 없음 */
+    padding:0; /* 패딩 없음 */
+}
+
+/* === 반응형: 모바일/태블릿 === */
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column; /* 세로 배치 */
+        align-items: stretch; /* 가로로 늘림 */
+        height: auto; /* 높이 자동 */
+        padding: 10px 0; /* 위아래 10px 패딩 */
+    }
+    header > div {
+        width: 100%; /* 너비 100% */
+        display: flex; /* flexbox 레이아웃 */
+        justify-content: center; /* 가운데 정렬 */
+        margin-bottom: 6px; /* 아래 마진 6px */
+    }
+    header .header_search {
+        width: 90%; /* 너비 90% */
+        margin: 0 auto 8px auto; /* 아래 마진 8px, 가운데 정렬 */
+    }
+    header .header_buttons {
+        width: 100%; /* 너비 100% */
+        justify-content: center; /* 가운데 정렬 */
+        margin: 0; /* 마진 없음 */
+    }
+    header #header_logo {
+        height: 40px; /* 높이 40px로 지정 */
+        margin: 0 0 8px 0; /* 아래 마진 8px */
+    }
+    header #search_icon {
+        width: 22px; /* 너비 22px */
+        height: 22px; /* 높이 22px로 지정 */
+        margin: 4px; /* 바깥 여백 4px */
+    }
+    .footer_nav ul li {
+        margin: 0 10px; /* 좌우 마진 10px */
+        padding: 0 4px; /* 좌우 패딩 4px */
+        font-size: 0.9rem; /* 글자 크기 0.9rem */
+    }
+    .nav_menu {
+        flex-direction: column; /* 세로 배치 */
+        align-items: center; /* 가운데 정렬 */
+        font-size: 1rem; /* 글자 크기 1rem */
+        padding: 8px 0; /* 위아래 8px 패딩 */
+    }
+}
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* 세로 배치 */
+        align-items: stretch; /* 가로로 늘림 */
+        height: auto; /* 높이 자동 */
+        padding: 6px 0; /* 위아래 6px 패딩 */
+    }
+    header > div {
+        width: 100%; /* 너비 100% */
+        display: flex; /* flexbox 레이아웃 */
+        justify-content: center; /* 가운데 정렬 */
+        margin-bottom: 4px; /* 아래 마진 4px */
+    }
+    header .header_search {
+        width: 98%; /* 너비 98% */
+        margin: 0 auto 6px auto; /* 아래 마진 6px, 가운데 정렬 */
+        height: 32px; /* 높이 32px로 지정 */
+    }
+    header .header_buttons {
+        width: 100%; /* 너비 100% */
+        justify-content: center; /* 가운데 정렬 */
+        margin: 0; /* 마진 없음 */
+    }
+    header #header_logo {
+        height: 32px; /* 높이 32px로 지정 */
+        margin: 0 0 6px 0; /* 아래 마진 6px */
+    }
+    header #search_icon {
+        width: 20px; /* 너비 20px */
+        height: 20px; /* 높이 20px로 지정 */
+        margin: 2px; /* 바깥 여백 2px */
+    }
+    header a {
+        font-size: 0.95rem; /* 글자 크기 0.95rem */
+        margin: 6px; /* 바깥 여백 6px */
+    }
+    .footer_nav ul li {
+        margin: 0 10px; /* 좌우 마진 10px */
+        padding: 0 4px; /* 좌우 패딩 4px */
+        font-size: 0.9rem; /* 글자 크기 0.9rem */
+    }
+    .nav_menu {
+        flex-direction: column; /* 세로 배치 */
+        align-items: center; /* 가운데 정렬 */
+        font-size: 0.95rem; /* 글자 크기 0.95rem */
+        padding: 6px 0; /* 위아래 6px 패딩 */
+    }
+}
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column; /* 세로 배치 */
+        align-items: stretch; /* 가로로 늘림 */
+        height: auto; /* 높이 자동 */
+        padding: 2px 0; /* 위아래 2px 패딩 */
+    }
+    header > div {
+        width: 100%; /* 너비 100% */
+        display: flex; /* flexbox 레이아웃 */
+        justify-content: center; /* 가운데 정렬 */
+        margin-bottom: 2px; /* 아래 마진 2px */
+    }
+    header .header_search {
+        width: 100%; /* 너비 100% */
+        margin: 0 auto 2px auto; /* 아래 마진 2px, 가운데 정렬 */
+        height: 28px; /* 높이 28px로 지정 */
+    }
+    header .header_buttons {
+        width: 100%; /* 너비 100% */
+        justify-content: center; /* 가운데 정렬 */
+        margin: 0; /* 마진 없음 */
+    }
+    header #header_logo {
+        height: 24px; /* 높이 24px로 지정 */
+        margin: 0 0 2px 0; /* 아래 마진 2px */
+    }
+    header #search_icon {
+        width: 16px; /* 너비 16px */
+        height: 16px; /* 높이 16px로 지정 */
+        margin: 1px; /* 바깥 여백 1px */
+    }
+    header a {
+        font-size: 0.85rem; /* 글자 크기 0.85rem */
+        margin: 4px; /* 바깥 여백 4px */
+    }
+    .footer_nav ul li {
+        margin: 0 2px; /* 좌우 마진 2px */
+        padding: 0 2px; /* 좌우 패딩 2px */
+        font-size: 0.8rem; /* 글자 크기 0.8rem */
+    }
+    .nav_menu {
+        flex-direction: column; /* 세로 배치 */
+        align-items: center; /* 가운데 정렬 */
+        font-size: 0.85rem; /* 글자 크기 0.85rem */
+        padding: 4px 0; /* 위아래 4px 패딩 */
+    }
+}
