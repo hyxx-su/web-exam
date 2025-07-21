@@ -125,7 +125,7 @@ header a:hover {
 
   button {
     padding: 0.75rem 1.5rem;
-    background-color: #4b3f3f;
+    background-color: rgb(0, 127, 254);
     color: white;
     border: none;
     border-radius: 4px;
@@ -134,7 +134,7 @@ header a:hover {
   }
 
   button:hover {
-    background-color: #3a3030;
+    background-color: rgb(0, 112, 223);
   }
 
   .image-grid {
