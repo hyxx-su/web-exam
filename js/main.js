@@ -20,5 +20,8 @@ function openPopup() {
     }
 };
 
-// 페이지가 완전히 로드되면 공지사항 팝업 자동 실행
-window.addEventListener('DOMContentLoaded', openPopup);
+// 현재 URL에 'main.html'이 포함되어 있는지 확인
+if (document.location.href.includes("main.html")) {
+    // 포함되어 있다면 창을 열 때 openPopup을 작동시킴
+    window.addEventListener('DOMContentLoaded', openPopup);
+}
