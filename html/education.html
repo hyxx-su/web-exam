@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장애 교육</title>
+    <link rel="stylesheet" href="../css/education.css">
+</head>
+<body>
+    <!-- ===== 상단 필수 헤더 영역 시작 ===== -->
+    <header>
+        <div><a href="../html/main.html"><img id="header_logo" src="../images/logo.png" alt="logo"></a></div>
+        <div class="header_search">
+            <img id="search_icon" src="../images/search_icon.png" alt="검색 아이콘">
+            <input id="search_input" type="text" placeholder=" 검색하기">
+        </div>
+        <div class="header_buttons">
+            <a href="../html/main.html"><b>홈</b></a>
+            <a href="#"><b>로그인</b></a>
+            <a href="#"><b>회원가입</b></a>
+        </div>
+    </header>
+    <!-- ===== 내비게이션 메뉴 영역 ===== -->
+    <nav class="nav_menu">
+        <div><a href="../html/info.html">복지센터</a></div>
+        <div><a href="../html/donate.html">모금하기</a></div>
+        <div><a href="../html/notice.html">공지사항</a></div>
+        <div><a href="../html/volunteering.html">자원봉사 신청</a></div>
+        <div><a href="../html/education.html">장애 교육</a></div>
+    </nav>
+    <!-- ===== 메인 컨텐츠 영역 ===== -->
+    <div class="container">
+        <div class="main-form">
+            <!-- FAQ 섹션 (상단으로 이동) -->
+            <h2 style="margin-top:0;">자주 묻는 질문(FAQ)</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">Q. 교육 신청은 어떻게 하나요?</button>
+                    <div class="faq-answer">상단의 신청 폼을 작성 후 '신청하기' 버튼을 눌러주시면 담당자가 확인 후 연락드립니다.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Q. 교육은 누구나 참여할 수 있나요?</button>
+                    <div class="faq-answer">네, 장애인 및 비장애인 모두 참여 가능합니다.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Q. 교육 자료는 어디서 받을 수 있나요?</button>
+                    <div class="faq-answer">교육 자료는 교육 당일 현장에서 제공되며, 추후 자료실 메뉴를 통해 다운로드하실 수 있습니다.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Q. 교육 장소/일정은 어떻게 확인하나요?</button>
+                    <div class="faq-answer">교육 일정은 담당자 안내 또는 홈페이지 공지사항을 통해 확인하실 수 있습니다.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Q. 기타 문의는 어디로 하나요?</button>
+                    <div class="faq-answer">하단의 연락처(010-3535-5606) 또는 이메일로 문의해 주세요.</div>
+                </div>
+            </div>
+            <!-- 교육 프로그램 카드 리스트 (FAQ와 폼 사이) -->
+            <h2 style="margin-top:40px;">교육 프로그램 안내</h2>
+            <div class="edu-card-list">
+                <div class="edu-card">
+                    <h3>장애 인식 개선 교육</h3>
+                    <p>장애에 대한 올바른 이해와 인식 개선을 위한 교육입니다.</p>
+                    <div class="edu-card-info">일정: 2025-08-10 (오전 10시)</div>
+                    <button class="edu-card-btn" disabled>신청 가능</button>
+                </div>
+                <div class="edu-card">
+                    <h3>장애 유형별 이해 교육</h3>
+                    <p>장애 유형별 특성과 지원 방법을 배우는 교육입니다.</p>
+                    <div class="edu-card-info">일정: 2025-08-17 (오후 2시)</div>
+                    <button class="edu-card-btn" disabled>신청 가능</button>
+                </div>
+                <div class="edu-card">
+                    <h3>체험형 교육(워크숍)</h3>
+                    <p>직접 체험을 통해 장애를 이해하는 워크숍 프로그램입니다.</p>
+                    <div class="edu-card-info">일정: 2025-08-24 (오전 10시)</div>
+                    <button class="edu-card-btn" disabled>신청 가능</button>
+                </div>
+            </div>
+            <!-- 장애인 이동 경로 찾기(미로) 게임 -->
+            <h2 style="margin-top:40px;">장애인 이동 경로 찾기(미로 게임)</h2>
+            <div style="text-align:center;">
+                <button id="maze-start-btn" style="margin:18px 0 0 0; font-size:1.1rem; padding:8px 22px; background:#007ffe; color:#fff; border:none; border-radius:6px; cursor:pointer; display:inline-block;">게임 시작</button>
+            </div>
+            <div id="maze-game" style="display:none;"></div>
+            <div id="maze-message" style="display:none; margin:16px 0; font-weight:bold; color:#1aaf1a;"></div>
+            <!-- 장애 교육 신청 폼 -->
+            <h2 style="margin-top:40px;">장애 교육 프로그램 신청</h2>
+            <p>아래 신청 폼을 작성해주시면 담당자가 확인 후 연락드립니다.</p>
+            <form id="educationForm" class="edu-form">
+                <div class="form-group">
+                    <label for="name">이름</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone">연락처</label>
+                    <input type="tel" id="phone" name="phone" placeholder="010-1234-5678" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" />
+                </div>
+                <div class="form-group">
+                    <label for="program">희망 교육</label>
+                    <select id="program" name="program" required>
+                        <option value="">선택해주세요</option>
+                        <option value="awareness">장애 인식 개선 교육</option>
+                        <option value="type">장애 유형별 이해 교육</option>
+                        <option value="workshop">체험형 교육(워크숍)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">요청사항</label>
+                    <textarea id="message" name="message" rows="3" placeholder="요청사항이 있다면 입력해주세요."></textarea>
+                </div>
+                <button type="submit">신청하기</button>
+                <div id="formSuccess" class="form-success" style="display:none; color:green; margin-top:10px;">신청이 완료되었습니다!</div>
+            </form>
+        </div>
+    </div>
+    <!-- ===== footer 영역 ===== -->
+    <footer>
+        <nav class="footer_nav">
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">도움말</a></li>
+                <li>사업자 : 대장복지센터</li>
+                <li>연락처 : 010-3535-5606</li>
+                <li><a href="https://www.qia.go.kr/listindexWebAction.do" target="_blank">대구장애인복지관</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <!-- ===== JavaScript 영역 ===== -->
+    <script src="../js/education.js"></script>
+    <!-- ================= -->
+</body>
+</html> 
