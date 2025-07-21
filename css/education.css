@@ -1,0 +1,606 @@
+body {
+    margin: 0;
+    background-color: #f8f7f7;
+    font-family: 'Noto Sans KR', Arial, sans-serif;
+}
+header {
+    width: 100%;
+    height: 50px;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header #header_logo {
+    margin: 12px;
+    height: 48px;
+}
+header .header_search {
+    height: 36px;
+    width: 40%;
+    margin: 0 20px;
+    border: 1px solid black;
+    border-radius: 36px;
+    display: flex;
+}
+header #search_icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin: 6px;
+}
+header #search_input {
+    width: 92%;
+    border: none;
+    align-self: center;
+    border-radius: 36px;
+}
+header .header_buttons {
+    display: flex;
+    align-items: center;
+    width: 13%;
+    justify-content: space-between;
+    margin-right: 12px;
+}
+header .header_search input:focus {
+    outline: none;
+}
+header a {
+    margin: 12px;
+    color: #342e2f;
+    text-decoration: none;
+}
+header a:hover {
+    color: rgb(0, 127, 254);
+    text-decoration: none;
+}
+.nav_menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: #342e2f;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    padding: 10px 0px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.nav_menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav_menu a:hover {
+    color: rgb(0, 127, 254);
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-form {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    width: 100%;
+}
+.footer_nav > ul {
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0px;
+    clear: both;
+    margin-bottom: 0px;
+}
+.footer_nav ul li {
+    display: inline;
+    padding: 0px 10px;
+    margin: 0px 40px;
+}
+.footer_nav ul li a {
+    color: #342e2f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.footer_nav ul li a:hover {
+    color: rgb(0, 127, 254);
+    text-decoration: none;
+}
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+        height: auto;
+        padding: 10px 0;
+    }
+    header > div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 6px;
+    }
+    header .header_search {
+        width: 90%;
+        margin: 0 auto 8px auto;
+    }
+    header .header_buttons {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+    header #header_logo {
+        height: 40px;
+        margin: 0 0 8px 0;
+    }
+    header #search_icon {
+        width: 22px;
+        height: 22px;
+        margin: 4px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-form {
+        max-width: 98vw;
+    }
+    .nav_menu {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+        padding: 8px 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 4px;
+    }
+    .main-form {
+        padding: 8px;
+        font-size: 0.95rem;
+    }
+    .footer_nav ul li {
+        margin: 0 10px;
+        padding: 0 4px;
+        font-size: 0.9rem;
+    }
+    .nav_menu {
+        font-size: 0.95rem;
+        padding: 6px 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 2px;
+    }
+    .main-form {
+        padding: 4px;
+        font-size: 0.85rem;
+    }
+    .footer_nav ul li {
+        margin: 0 2px;
+        padding: 0 2px;
+        font-size: 0.8rem;
+    }
+    .nav_menu {
+        font-size: 0.85rem;
+        padding: 4px 0;
+    }
+} 
+/* 신청 폼 스타일 */
+.edu-form {
+    max-width: 400px;
+    margin: 0 auto 32px auto;
+    padding: 24px 18px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.edu-form .form-group {
+    margin-bottom: 16px;
+    text-align: left;
+}
+.edu-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+.edu-form input,
+.edu-form select,
+.edu-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.edu-form button[type="submit"] {
+    width: 100%;
+    padding: 12px 0;
+    background: #007ffe;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s;
+}
+.edu-form button[type="submit"]:hover {
+    background: #005bb5;
+}
+.form-success {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* FAQ 스타일 */
+.faq-list {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 8px 32px 8px;
+}
+.faq-item {
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    background: #fff;
+    overflow: hidden;
+}
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background: #f0f6ff;
+    color: #222;
+    border: none;
+    outline: none;
+    font-size: 1.05rem;
+    font-weight: bold;
+    padding: 16px 18px;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+.faq-question::before {
+    content: '▶';
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.1em;
+    transition: transform 0.2s;
+}
+.faq-item.active .faq-question {
+    background: #f0f6ff;
+    color: #222;
+    box-shadow: none;
+    border-left: none;
+}
+.faq-item.active .faq-question::before {
+    content: '▼';
+    color: #007ffe;
+}
+.faq-answer {
+    display: none;
+    padding: 18px 22px 18px 32px;
+    color: #333;
+    font-size: 1.08rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #e0eaff;
+    margin: 0 8px 16px 8px;
+    box-shadow: 0 2px 8px rgba(0,127,254,0.04);
+    transition: max-height 0.3s cubic-bezier(.4,0,.2,1), opacity 0.3s;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+.faq-item.active .faq-answer {
+    display: block;
+    opacity: 1;
+    max-height: 300px;
+    margin-top: 0;
+} 
+
+/* 교육 프로그램 카드 리스트 스타일 */
+.edu-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin: 32px 0 32px 0;
+}
+.edu-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 24px 20px 20px 20px;
+    width: 280px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: box-shadow 0.2s;
+}
+.edu-card:hover {
+    box-shadow: 0 4px 16px rgba(0,127,254,0.13);
+}
+.edu-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.18rem;
+    color: #007ffe;
+}
+.edu-card p {
+    margin: 0 0 12px 0;
+    color: #333;
+    font-size: 1rem;
+}
+.edu-card-info {
+    font-size: 0.97rem;
+    color: #666;
+    margin-bottom: 16px;
+}
+.edu-card-btn {
+    background: #007ffe;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: not-allowed;
+    opacity: 0.7;
+    transition: background 0.2s;
+}
+.edu-card-btn:active {
+    background: #005bb5;
+}
+@media (max-width: 900px) {
+    .edu-card-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .edu-card {
+        width: 95vw;
+        max-width: 350px;
+    }
+} 
+
+/* 교육 일정 달력 스타일 */
+.edu-calendar {
+    width: 100%;
+    overflow-x: auto;
+    margin: 32px 0 24px 0;
+}
+.edu-calendar table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 500px;
+}
+.edu-calendar th, .edu-calendar td {
+    border: 1px solid #e0eaff;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 1rem;
+    min-width: 60px;
+    vertical-align: top;
+}
+.edu-calendar th {
+    background: #f0f6ff;
+    color: #007ffe;
+    font-weight: bold;
+}
+.edu-calendar .calendar-event {
+    display: inline-block;
+    margin-top: 6px;
+    background: #007ffe;
+    color: #fff;
+    border-radius: 8px;
+    padding: 2px 8px;
+    font-size: 0.92rem;
+    font-weight: bold;
+}
+
+/* 교육 자료실 스타일 */
+.edu-files ul {
+    list-style: disc inside;
+    padding-left: 0;
+    margin: 0 0 24px 0;
+    text-align: left;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.edu-files li {
+    margin-bottom: 10px;
+}
+.edu-files a {
+    color: #007ffe;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.edu-files a:hover {
+    color: #005bb5;
+}
+
+/* 문의/상담 스타일 */
+.edu-contact {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 24px 16px 16px 16px;
+    max-width: 500px;
+    margin: 0 auto 32px auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.edu-contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px 0;
+    text-align: left;
+}
+.edu-contact li {
+    margin-bottom: 6px;
+    color: #333;
+}
+.contact-form .form-group {
+    margin-bottom: 14px;
+    text-align: left;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.contact-form button[type="submit"] {
+    width: 100%;
+    padding: 10px 0;
+    background: #007ffe;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.05em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s;
+}
+.contact-form button[type="submit"]:hover {
+    background: #005bb5;
+} 
+
+/* 장애 인식 퀴즈 스타일 */
+.edu-quiz {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 24px 16px 16px 16px;
+    max-width: 500px;
+    margin: 0 auto 32px auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    text-align: left;
+}
+.quiz-question {
+    font-size: 1.08rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: #222;
+}
+.quiz-options {
+    margin-bottom: 10px;
+}
+.quiz-option {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 14px;
+    background: #e0eaff;
+    color: #222;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.quiz-option:hover {
+    background: #b3d4fc;
+}
+.quiz-option.selected {
+    background: #007ffe;
+    color: #fff;
+    font-weight: bold;
+}
+.quiz-result {
+    font-size: 1.05rem;
+    font-weight: bold;
+    padding: 10px 0 0 0;
+}
+.quiz-result.correct {
+    color: #1aaf1a;
+}
+.quiz-result.incorrect {
+    color: #e23c3c;
+} 
+
+/* 미로 게임 스타일 */
+#maze-game {
+    display: inline-block;
+    margin: 24px auto 16px auto;
+    border: 2px solid #007ffe;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 0 2px 8px rgba(0,127,254,0.08);
+}
+.maze-row {
+    display: flex;
+}
+.maze-cell {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #e0eaff;
+    box-sizing: border-box;
+    position: relative;
+}
+.maze-wall {
+    background: #bdbdbd;
+}
+.maze-path {
+    background: #fff;
+}
+.maze-start {
+    background: #d0f5d0;
+    border: 2px solid #1aaf1a;
+}
+.maze-end {
+    background: #ffe0b2;
+    border: 2px solid #ff9800;
+}
+.maze-player {
+    background: #007ffe;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 2;
+    box-shadow: 0 2px 6px rgba(0,127,254,0.15);
+}
+#maze-message {
+    font-size: 1.1rem;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    #maze-game {
+        transform: scale(0.8);
+    }
+} 
+
+/* 미로 게임 아래 버튼 중앙 정렬 */
+#maze-game + #maze-start-btn {
+    display: block !important;
+    margin: 18px auto 0 auto !important;
+    text-align: center;
+} 
