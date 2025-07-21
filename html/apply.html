@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>자원봉사 신청 - 대장</title>
+  <link rel="stylesheet" href="../css/apply.css" />
+</head>
+<body>
+
+<!-- ===== 상단 필수 헤더 영역 시작 ===== -->
+<header>
+        
+    <!-- 로고 영역 -->
+    
+    <div><a href="../html/main.html"><img id="header_logo" src="../images/logo.png" alt="logo"></a></div>
+    
+    <!-- 검색창 영역 -->
+    
+    <div class="header_search">
+        <img id="search_icon" src="../images/search_icon.png" alt="검색 아이콘">
+        <input id="search_input" type="text" placeholder=" 검색하기">
+    </div>
+    
+    <!-- 상단 버튼(홈/로그인/회원가입) -->
+    
+    <div class="header_buttons">
+        <a href="../html/main.html"><b>홈</b></a>
+        <a href="#"><b>로그인</b></a>
+        <a href="#"><b>회원가입</b></a>
+    </div>
+</header>
+
+<!-- ===== 내비게이션 메뉴 영역 ===== -->
+
+<nav class="nav_menu">
+    <div><a href="../html/info.html">복지센터</a></div>
+    <div><a href="../html/donate.html">모금하기</a></div>
+    <div><a href="../html/notice.html">공지사항</a></div>
+    <div><a href="#">자원봉사 신청</a></div>
+    <div><a href="#">장애 교육</a></div>
+</nav>
+
+  <div class="container">
+    <div class="content">
+      <h1><strong>자원봉사 신청 안내</strong></h1>
+      <p>자원봉사는 지역 사회를 돕는 귀중한 활동입니다. 신청 양식을 작성해주시면 확인 후 연락드리겠습니다.</p>
+      <!-- ===== 자원봉사 사진 갤러리 ===== -->
+        <div class="image-grid">
+            <img src="https://dimg.donga.com/wps/NEWS/IMAGE/2019/10/10/97803507.1.jpg" alt="봉사활동 사진 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3euJY0BB2DSSX4I2CHzRxigoo1-BxM8AHVQ&s" alt="봉사활동 사진 2">
+            <img src="https://img.hani.co.kr/imgdb/resize/2023/0825/169285510822_20230825.JPG" alt="봉사활동 사진 3">
+            <img src="https://cphoto.asiae.co.kr/listimglink/1/2013072214105205475_1.jpg" alt="봉사활동 사진 4">
+            <img src="https://www.geojetimes.co.kr/news/photo/201108/55503_87629_3126.gif" alt="봉사활동 사진 5">
+            <img src="https://www.gcinnews.com/news/photo/202406/11489_14837_333.jpg" alt="봉사활동 사진 6">
+        </div>
+    </div>
+
+    <div class="form-box">
+      <h2>신청 폼</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">이름</label>
+          <input type="text" id="name" name="name" placeholder="홍길동" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">연락처</label>
+          <input type="tel" id="phone" name="phone" placeholder="010-1234-5678" required />
+        </div>
+        <div class="form-group">
+          <label for="email">이메일</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" />
+        </div>
+        <div class="form-group">
+          <label for="area">희망 봉사 지역</label>
+          <select id="area" name="area" required>
+            <option value="">선택해주세요</option>
+            <option value="daegu">대구</option>
+            <option value="seoul">서울</option>
+            <option value="busan">부산</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">봉사 동기 / 특이사항</label>
+          <textarea id="message" name="message" rows="4" placeholder="봉사 신청 동기 및 요청사항을 입력해주세요."></textarea>
+        </div>
+        <button type="submit">신청하기</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
